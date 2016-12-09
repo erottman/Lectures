@@ -1,11 +1,9 @@
-var sum = 0;
-for (var i = 1; i <= 100; i++) {
-    sum += i;
-    if (i == 5) {
-        break;
-    }
-    console.log("Sum = " + sum);
-}
-console.log("END :" + sum);
+function greeting(person) {
+  document.getElementById('message').innerHTML += "<p>Hola" + person + "</p>";
+};
 
-document.getElementById('message').innerHTML = sum;
+var greetMe =["noodle", "moodle", "voodle", "roodle"];
+
+for (var i = 0; i < greetMe.length; i++) {
+   greeting(greetMe[i]);
+}
